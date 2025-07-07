@@ -4,9 +4,9 @@ import pandas as pd
 
 def parse_uploaded_file(file):
     try:
-        if file.name.endswith('.csv'):
+        if file.name.endswith(".csv"):
             return pd.read_csv(file)
-        elif file.name.endswith('.xlsx'):
+        elif file.name.endswith(".xlsx"):
             return pd.read_excel(file)
         else:
             return None
