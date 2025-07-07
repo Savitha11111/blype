@@ -2,13 +2,8 @@
 
 import streamlit as st
 import pandas as pd
-from app.utils import parse_uploaded_file
-from app.jira import (
-    get_authorization_url,
-    exchange_code_for_token,
-    get_cloud_id,
-    create_jira_issue,
-)
+from utils import parse_uploaded_file
+from jira import get_authorization_url, exchange_code_for_token, get_cloud_id, create_jira_issue
 
 st.set_page_config(page_title="Kanban Task Uploader", layout="wide")
 st.title("📋 Kanban Task Uploader")
